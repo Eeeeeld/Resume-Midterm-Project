@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @media (max-width:1000px){
+      .site{flex-direction:column;padding-bottom:40px}
+      nav.side{width:100%;position:relative;height:auto;top:0}
+      main.content{max-height:none}
+      .skills-grid{grid-template-columns:1fr}
+      .exp{grid-template-columns:1fr}
+      .exp img{width:100%;height:220px}
+    }
+
+    a.skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+    .animate{animation:fadeInUp .7s both}
+
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main"></a>
+  <div class="site">
+
+<!--Navbar-->
+    <nav class="side" aria-label="Sidebar">
+      <div class="photo"><img src="images/profile.jpg" alt="Profile photo"></div>
+      <h1>張兒仁</h1>
+      <p class="slogan">「自律帶來進步」</p>
+      <p class="intro">我有點安靜，但個性隨和。如果能學到新東西，我也願意吃苦。</p>
+
+      <nav class="nav-links" aria-label="Quick links">
+        <a href="#about">關於我</a>
+        <a href="#skills">技能</a>
+        <a href="#education">學歷</a>
+        <a href="#experience">經驗</a>
+        <a href="#organizations">組織 / 活動</a>
+        <a href="#contact">聯絡方式</a>
+      </nav>
+
+      <div class="contact-list">
+        <strong>聯絡方式</strong>
+        <a href="mailto:eldenjtk6@gmail.com">✉️ eldenjtk6@gmail.com</a>
+        <a href="">📞 +886-123-456-897</a>
+        <a href="https://github.com/Eeeeeld" target="_blank" rel="noopener">💻 GitHub</a>
+        <a href="https://tw.linkedin.com/in/elden-jonathan-張兒仁-77338b28a" target="_blank" rel="noopener">🔗 LinkedIn</a>
+      </div>
+    </nav>
+
+<!--Main-->
+    <main id="main" class="content" tabindex="-1">
+      <header class="top animate">
+        <div class="title">
+          <h2>張兒仁 (Elden Jonathan)</h2>
+          <h3>資管系學生</h3>
+          <p class="lead">你好，我是一名來自印尼的國際學生，目前就讀資管系四年級。原本來到台灣是為了學中文，但最終學到的遠超乎預期。</p>
+        </div>
+
+        <aside style="width:220px;text-align:right">
+          <div style="background:#fbfbff;padding:12px;border-radius:8px;border:1px solid #f1f5f9">
+            <strong>地點</strong>
+            <div style="color:var(--muted);">桃園，台灣</div>
+            <div style="height:8px"></div>
+          </div>
+        </aside>
+      </header>
+
+<!--Skills-->
+      <section id="skills" class="animate">
+        <h4>專業與技術技能</h4>
+        <div style="height:12px"></div>
+        <div class="skills-grid">
+          <div>
+            <div class="skill">
+              <div class="label"><span>HTML / CSS</span><span>90%</span></div>
+              <div class="bar"><div class="fill" style="width:90%" aria-hidden="true"></div></div>
+            </div>
+
+            <div class="skill">
+              <div class="label"><span>Python</span><span>70%</span></div>
+              <div class="bar"><div class="fill" style="width:70%"></div></div>
+            </div>
+
+            <div class="skill">
+              <div class="label"><span>React</span><span>55%</span></div>
+              <div class="bar"><div class="fill" style="width:55%"></div></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="skill">
+              <div class="label"><span>MySQL</span><span>75%</span></div>
+              <div class="bar"><div class="fill" style="width:75%"></div></div>
+            </div>
+
+            <div class="skill">
+              <div class="label"><span>活動協調能力</span><span>80%</span></div>
+              <div class="bar"><div class="fill" style="width:80%"></div></div>
+            </div>
+
+            <div class="skill">
+              <div class="label"><span>印尼語 / 英文 / 中文</span><span>多語能力</span></div>
+              <div class="bar"><div class="fill" style="width:85%"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!--Education-->
+      <section id="education" class="animate">
+        <h4>學歷</h4>
+        <div class="timeline">
+          <article class="exp">
+            <img src="images/edu.png" alt="edu1">
+            <div>
+              <div class="exp1">中原大學（四年級）</div>
+              <h5>資訊管理學系</h5>
+              <p>修習資料分析與資料管理相關課程，並學習其實際應用。曾製作過從 Pygame 小遊戲到完整資料分析系統等多項專案。</p>
+              <a href="https://github.com/Eeeeeld" target="_blank" rel="noopener">💻 我的作品</a>
+            </div>
+          </article>
+        </section>
+
+<!--Experience-->
+      <section id="experience" class="animate">
+        <h4>經驗</h4>
+        <div class="timeline">
+
+          <article class="exp">
+            <img src="images/job3.jpg" alt="job2">
+            <div>
+              <div class="exp1">欣興電子－品管實習生 · 2024（兩個月）</div>
+              <h5>品質管制與流程改善</h5>
+              <p>在欣興電子實習期間，我主要協助 PCB 與各類電子元件的製程與品質檢測工作。日常任務包含進行實驗室測試、基本材料檢查，以及協助紀錄製程中重要的品質參數。我也使用 Excel 來整理與分析檢測資料，以協助主管掌握品質狀況。這段經驗讓我實際了解製造流程與品管作業的細節，並熟悉製程改善所需的基本工具與方法。</p>
+            </div>
+          </article>
+
+<!--Organization-->
+
+      <section id="organizations" class="animate">
+         <h4>組織與活動</h4>
+         <div class="timeline">
+
+          <article class="exp">
+            <img src="images/isa.jpg" alt="Organizational work">
+            <div>
+              <div class="exp1">國際學生聯誼會</div>
+              <h5>國際學生會112學年度資訊組組長</h5>
+              <p>擔任資訊部部長期間，我負責管理國際學生會的社群平台，包括內容發布、活動宣傳與視覺素材製作。我與團隊合作規劃每次貼文的呈現方式，並確保所有資訊能準確且及時地傳達給會員。同時也需要處理多項活動資料整理與媒體內容製作的需求，使整體運作更順暢。</p>
+              📸 <a href="https://www.instagram.com/cycu_isa" target="_blank" rel="noopener">CYCU ISA Instagram</a>
+            </div>
+          </article>
+          <br>
+          <article class="exp">
+            <img src="images/isa2.jpg" alt="Organizational work">
+            <div>
+              <div class="exp1">112學年度國際慈善日</div>
+              <h5>多媒體組成員</h5>
+              <p>在這項年度慈善活動中，我主要負責現場的影音設備操作。包含播放表演所需的音樂、調整講者的麥克風音量，以及確保整體音響系統在活動過程中保持穩定。這份工作需要高度專注與即時反應能力，因為任何小錯誤都可能影響活動流程。透過這次經驗，我更加熟悉多媒體設備的實際運作方式。</p>
+            </div>
+          </article>
+          <article class="exp">
+            <img src="images/isa3.jpg" alt="Organizational work">
+            <div>
+              <div class="exp1">秋季台南文化之旅</div>
+              <h5>活動總協</h5>
+              <p>身為活動協調員，我協助規劃並安排整體旅遊行程，包括行程動線、時間分配與各項活動細節。為確保活動順利進行，我與其他組員分配任務，監督每個人負責的部分是否如期完成。旅程當天也需要處理突發狀況並協調各組的合作，使整體活動能順利且安全地進行。</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+<!--Contact +Links-->
+
+    <footer>
+      <section id="contact" class="animate">
+        <h4>聯絡方式與連結</h4>
+        <ul style="margin-top:12px;line-height:1.8">
+          <li>📧 <a href="mailto:eldenjtk6@gmail.com">eldenjtk6.com</a></li>
+          <li>📞 <a href="tel:+886900000000">+886 123-456-789</a></li>
+          <li>💻 <a href="https://github.com/Eeeeeld" target="_blank" rel="noopener">GitHub Page</a></li>
+          <li>🔗 <a href="https://tw.linkedin.com/in/elden-jonathan-張兒仁-77338b28a" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li>📸 <a href="https://www.instagram.com/eeee.ld" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </section>
+    </footer>
+    </main>
+  </div>
+</body>
+</html>
